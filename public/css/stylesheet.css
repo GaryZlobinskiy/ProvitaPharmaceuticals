@@ -19,7 +19,7 @@ html,body
 }
 
 .landing {
-    height: 700px;
+    height: 900px;
     width: 100%;
     margin: 0;
     border: 0;
@@ -28,11 +28,23 @@ html,body
     background-image: url("/images/provitaStudent4.png");
     background-size: 100%;
     color: #1c2938;
+    padding-top: 300px;
+}
+
+.landingMiddle {
+    position: relative;
+    height: 400px;
+    width: 1000px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    background-color: #f4f6f6;
+    border-radius: 6%;
 }
 
 .landingHeader {
-    padding-top: 280px;
-    padding-bottom: 20px;
+    padding-top: 90px;
+    padding-bottom: 50px;
     color: #1c2938;
 }
 
@@ -163,4 +175,11 @@ body::-webkit-scrollbar-button {display:none}
     width: 100%;
     color: #1c2938;
     font-family: 'Raleway', sans-serif;
+}
+
+.contactUsPage {
+    height: 600px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    border-top: 100px;
 }
