@@ -11,7 +11,6 @@ const app = express();
 
 
 app.use(express.static("public"));
-app.use(express.static("views"));
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({
@@ -29,7 +28,7 @@ const emailRecipientsProvita = {
 const User = new mongoose.model("ProvitaEmailRecipients", emailRecipientsProvita);
 
 app.get("/", function(req, res) {
-    res.sendFile(__dirname + "/views/home.html");
+    res.sendFile(__dirname + "/home.html");
 });
 
 app.post("/", function(req, res) {
@@ -68,25 +67,16 @@ app.post("/", function(req, res) {
 
     request(options, function(error, response, body) {
         if (error) {
-            res.sendFile(__dirName + "/views/failure.html");
+            res.sendFile(__dirName + "/failure.html");
         } else {
             if (response.statusCode === 200) {
-                res.sendFile(__dirname + "/views/success.html");
+                res.sendFile(__dirname + "/success.html");
             } else {
-                res.sendFile(__dirname + "/views/failure.html");
+                res.sendFile(__dirname + "/failure.html");
             }
         }
     })
 });
-
-app.get("/contactMePage", function(req, res){
-    res.sendFile(__dirname + "/views/contactMePage.html");
-});
-
-app.post("/contactMePage", function(req, res) {
-    res.redirect("/");
-});
-
 app.post("/failure", function(req, res) {
     res.redirect("/");
 });
