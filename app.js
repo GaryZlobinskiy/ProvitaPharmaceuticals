@@ -3,7 +3,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
-const mongoose = require("mongoose");
 const request = require("request");
 
 const app = express();
@@ -17,15 +16,11 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-mongoose.connect("mongodb://localhost:27017/userDB", {useNewUrlParser: true, useUnifiedTopology: true});
-
 const emailRecipientsProvita = {
     firstName: String,
     lastName: String,
     email: String
 };
-
-const User = new mongoose.model("ProvitaEmailRecipients", emailRecipientsProvita);
 
 app.get("/", function(req, res) {
     res.sendFile(__dirname + "/home.html");

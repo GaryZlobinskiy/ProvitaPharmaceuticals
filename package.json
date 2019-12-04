@@ -14,9 +14,7 @@
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
-    "mongoose": "^5.7.12",
     "node": "^13.3.0",
-    "request": "^2.88.0",
-    "strapi-hook-mongoose": "^3.0.0-beta.17.8"
+    "request": "^2.88.0"
   }
 }
