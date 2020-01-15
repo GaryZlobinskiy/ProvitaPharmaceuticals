@@ -70,6 +70,7 @@ html,body
   padding-left: 20px;
   padding-bottom: 200px;
   padding-right: 20px;
+  background-color: #cd3f3e;
 }
 
 .productCard {
@@ -77,6 +78,36 @@ html,body
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
+  background-color: #ff9c91;
+}
+
+.productCardb {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #DCDCDC;
+  border-radius: 5%;
+}
+
+.productCardc {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #f4f6f6;
+  border-radius: 5%;
+  width: 60%;
+}
+
+.productCardd {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0;
+  background-color: #f4f6f6;
+  border-radius: 5%;
+  width: 60%;
 }
 
 /*.productsDescription {*/
@@ -192,8 +223,8 @@ body::-webkit-scrollbar-button {display:none}
 }
 
 .contactUsPage {
-    height: 600px;
     padding-top: 50px;
     padding-bottom: 100px;
     border-top: 100px;
+    background-color: #ff9c91;
 }
