@@ -36,7 +36,6 @@ app.post("/", function(req, res) {
     var lastNameC = req.body.lNameC;
     var emailC = req.body.emailC;
 
-
     var data = {
         members: [
             {
