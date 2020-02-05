@@ -29,6 +29,8 @@ html,body
     background-size: 100%;
     color: #1c2938;
     padding-top: 300px;
+    top: 0;
+    left: 0;
 }
 
 .landingMiddle {

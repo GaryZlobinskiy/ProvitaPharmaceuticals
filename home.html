@@ -15,17 +15,19 @@
 
 
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #1c2938;">
-    <a class="navbar-brand" href="/">
-      <img src="images/ProvitaNewLogoTransparent.png" alt="ProvitaLogo" class="navLogo">
-    </a>
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" style="position: absolute !important; right: 10px !important;">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div style="float:left;">
+      <a class="navbar-brand" href="/">
+        <img src="images/ProvitaNewLogoTransparent.png" alt="ProvitaLogo" class="navLogo">
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" style="position: absolute !important; right: 10px !important;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
 
-    <div class="collapse navbar-collapse" id="navbarText">
+    <div class="collapse navbar-collapse" id="navbarText" style="clear: both;float:right;padding-left:600px;">
       <ul class="navbar-nav navbar-right" style="padding: 5px;">
         <li class="nav-item" style="margin-top: 9px;">
-          <button type="button" class="btn btn-default margin-right"><a class="aLoginSignIn" href="#contactUsPage"  style="text-decoration: none; color: #ffffff;"><i class="fas fa-user"></i> Contact Us</a></button>
+          <button type="button" class="btn btn-default margin-right"><a class="aLoginSignIn" href="#contactUsPage"  style="text-decoration: none; color: #ffffff"><i class="fas fa-user"></i> Contact Us</a></button>
         </li>
         <li class="nav-item" style="margin-top: 9px;">
           <button type="button" class="btn btn-default"><a class="aLoginSignIn" href="#aboutUsPage" style="text-decoration: none; color: #ffffff;"></i> About Us</a></button>
@@ -41,15 +43,21 @@
           <div class="card productCardc">
             <div class="card-body">
               <h1 class="landingHeader card-title" style="font-size: 400%; padding-top: -100px;">Sign Up For Our Newsletter!</h1>
-              <form action="/" class="form-signin" method="POST">
+              <form action="/" class="form-signin" method="POST" style="padding: 30px;">
 
-                <input type="text" name="fName" class="form-control-sm" placeholder="First Name" required autofocus>
-                <input type="text" name="lName" class="form-control-sm" placeholder="Last Name" required>
-                <input type="email" name="email" class="form-control-sm" placeholder="Email" required>
-
-                <div class="checkbox mb-3">
+                <div class="form-row" style="padding-bottom: 20px">
+                  <div class="col-md-4" style="padding: 5px">
+                    <input type="text" name="fName" class="form-control" placeholder="First Name" required autofocus>
+                  </div>
+                  <div class="col-md-4" style="padding: 5px">
+                    <input type="text" name="lName" class="form-control" placeholder="Last Name" required>
+                  </div>
+                  <div class="col-md-4" style="padding: 5px">
+                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                  </div>
                 </div>
                 <button class="btn-default btn btn-lg" type="submit">Sign Me Up!</button>
+
               </form>
             </div>
           </div>
@@ -164,39 +172,27 @@
       <div class="col-sm-12 col-lg-12 col-md-12">
         <div class="card productCardd">
           <div class="card-body">
-            <h2 class="card-title" style="padding-bottom: 50px;">Contact us and we will get back to you as soon as posssible.</h2>
-            <form action="mailto:garzlo22@bergen.org" class="form-signin" method="POST" enctype="text/plain">
-              <table>
-                <td style="padding: 5px;">
-                  <label class="col-sm-12" style="font-size: 20px; padding-bottom: 10px;">First Name:</label>
-                  <div class="col-sm-12" style="padding-bottom: 20px;">
-                      <input type="text" name="First Name" class="form-control-sm" id="fnameC" placeholder="First Name" required autofocus>
-                  </div>
-                </td>
+            <h2 class="card-title" style="padding-bottom: 50px;">Contact Us</h2>
+            <form action="mailto:provitapharmeceuticals@gmail.com" class="form-signin" method="POST" enctype="text/plain">
+              <div class="form-group">
+                <label>First Name:</label>
+                <input name="First Name" type="text" class="form-control col-sm-12" id="fnameC" aria-describedby="emailHelp" placeholder="Enter first name">
+              </div>
+              <div class="form-group">
+                <label>Last Name:</label>
+                <input name="Last Name" type="text" class="form-control col-sm-12" id="lnameC" aria-describedby="emailHelp" placeholder="Enter last name">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email:</label>
+                <input name="Email" type="email" class="form-control col-sm-12" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message:</label>
+                <textarea name="Message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
 
-                <td style="padding: 5px;">
-                  <label class="col-sm-12" style="font-size: 20px; padding-bottom: 10px;">Last Name:</label>
-                  <div class="col-sm-12" style="padding-bottom: 20px;">
-                      <input type="text" name="Last Name" class="form-control-sm" id="lnameC" placeholder="Last Name" required autofocus>
-                  </div>
-                </td>
-
-                <td style="padding: 5px;">
-                  <label class="col-sm-12" style="font-size: 20px; padding-bottom: 10px;">Email:</label>
-                  <div class="col-sm-12" style="padding-bottom: 20px;">
-                      <input type="email" name="Email" class="form-control-sm" placeholder="Email" required autofocus>
-                  </div>
-                </td>
-              </table>
-
-                <div class="form-group">
-                      <label style="font-size: 20px; padding-bottom: 10px;">Message:</label>
-                      <div style="padding-bottom: 20px;">
-                        <textarea name="Message" class="form-control" rows="5"></textarea>
-                      </div>
-                </div>
-
-              <button class="btn-default btn btn-lg" type="submit" value="Send">Send Message</button>
+              <small id="emailHelp" class="form-text text-muted" style="padding-bottom: 10px">We will never share your name with anyone else.</small>
+              <button type="submit" class="btn-default btn btn-lg" value="Send">Submit</button>
             </form>
             <p style="padding-top: 10px;">If the form does not work, please contact us through the email: provitapharmeceuticals@gmail.com</p>
           </div>
